@@ -1,9 +1,7 @@
 <?php
-function db(): PDO {
+// db.php（GitHub公開用）
+// 本番環境では .env やサーバー側設定を使用する想定
 
-  $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-  return new PDO($dsn, $user, $pass, [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-  ]);
+function db(): PDO {
+  throw new Exception('Database configuration is not included in this repository.');
 }
