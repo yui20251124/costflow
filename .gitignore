@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# DB（ローカル専用）
+*.sqlite
+*.db
+
+# 環境依存
+.env
+
+# キャッシュ
+node_modules/
+
+# IDE
+.vscode/
+.idea/
